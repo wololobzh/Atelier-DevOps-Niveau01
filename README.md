@@ -52,5 +52,14 @@ jobs:
         run: echo "coucou"
 ```
 
-4. Créer un fichier 'linter.yml' qui sera notre second workflow
+4. Créer un fichier 'linter.yml' qui sera notre second workflow pour linter le html
+5. Nous allons installer un linter :
+
+```bash
+npm install htmlhint --save-dev
+```
+
+6. Nous allons ajouter un .gitignore
+7. 
+
  
