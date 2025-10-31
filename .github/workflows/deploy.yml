@@ -1,0 +1,13 @@
+name: Deploy HTML site
+
+on:
+  push:
+    branches: [ "main" ]  # se déclenche à chaque push sur la branche main
+
+jobs:
+  afficher-texte:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Afficher un message simple
+        run: echo "Hello DevOps 🚀"
+        
