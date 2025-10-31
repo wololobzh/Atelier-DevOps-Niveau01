@@ -42,5 +42,5 @@
   "tagname-lowercase": false,
   "tagname-specialchars": false,
   "tags-check": false,
-  "title-require": false
+  "title-require": true
 }
