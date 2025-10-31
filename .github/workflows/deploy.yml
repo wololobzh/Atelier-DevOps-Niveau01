@@ -4,7 +4,12 @@ on:
   push:
     branches: [ "main" ]  # se déclenche à chaque push sur la branche main
 
+env:
+    WOLOLO: blabla
+
 jobs:
+
+
   afficher-texte:
     runs-on: ubuntu-latest
     steps:
@@ -31,7 +36,11 @@ jobs:
 
       - name: Afficher des variables d'environnement
         env:
-          MON_MESSAGE: "Déploiement en cours..."
-        run: echo "$WOLOLO"
+          MON_MESSAGE: "Je vais afficher une variable d'environnement"
+        run: echo "$MON_MESSAGE"
+
+      - name: Afficher coucou si WOLOLO est défini
+        if: env.WOLOLO == 'blabla'
+        run: echo "coucou"
 
       
