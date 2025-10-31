@@ -10,4 +10,9 @@ jobs:
     steps:
       - name: Afficher un message simple
         run: echo "Hello DevOps 🚀"
-        
+      - name: Afficher plusieurs lignes
+        run: |
+          echo "=== Début du script ==="
+          echo "Étape 1 : préparation"
+          echo "Étape 2 : déploiement"
+          echo "=== Fin du script ==="
